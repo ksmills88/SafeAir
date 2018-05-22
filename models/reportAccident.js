@@ -1,11 +1,24 @@
 module.exports = function(sequelize, DataTypes) {
     var Accident = sequelize.define("Accident", {
+     
+      location: {
+          type: DataTypes.STRING
+      },
 
-      location: DataTypes.STRING,
-      nNumber: DataTypes.INTEGER,
-      comments: DataTypes.TEXT
+      nNumber: {
+          type: DataTypes.NUMBER
+      },
+      comments:{
+
+      type:DataTypes.TEXT
+      },
+
+      createdAt: Sequelize.DATE,
     });
-
-  return Accident;
-
+  
+   Accident.associate = function(models) {
+       Accident.belongsTo(models.User, {
+        });
+    return Accident;
+  };
 };
