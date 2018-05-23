@@ -3,7 +3,7 @@
     "username": "root",
     "password": "root",
     "database": "users",
-    "port": 8889,
+   
     "host": "127.0.0.1",
     "dialect": "mysql"
   },
@@ -11,14 +11,14 @@
     "username": "root",
     "password": "root",
     "database": "users",
-    "port": 8889,
+  
     "host": "127.0.0.1",
     "dialect": "mysql"
   },
   "production": {
     "username": "root",
     "password": "root",
-    "port": 8889,
+    
     "database": "user",
     "host": "127.0.0.1",
     "dialect": "mysql"
