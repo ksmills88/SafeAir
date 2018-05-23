@@ -1,12 +1,12 @@
 $(document).ready(function () {
-    var accountCreateForm = $("#account-crt-form")
-    var firstNameInput = $("firstName");
-    var lastNameInput = $("lastName");
-    var emailInput = $("email");
-    var passwordInput = $("password");
+    var accountForm = $("#account-crt-form")
+    var firstNameInput = $("#firstName");
+    var lastNameInput = $("#lastName");
+    var emailInput = $("#email");
+    var passwordInput = $("#password");
 
-    $(accountCreateForm).on("submit", function handleFormSubmit(event) {
-        event.preventDefault();
+    $("#crt-btn").on("click", function handleFormSubmit(event) {
+        // event.preventDefault();
         var newUser = {
             firstName: firstNameInput.val().trim(),
             lastName: lastNameInput.val().trim(),
@@ -15,5 +15,12 @@ $(document).ready(function () {
         };
 
         console.log(newUser);
+
+        createUser(newUser)
     });
+
+    function CreateUser(User) {
+        $.post("/api/createaccount/", User, function() {});
+      }
+
 });

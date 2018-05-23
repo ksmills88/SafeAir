@@ -1,7 +1,7 @@
 var db = require("../models");
 
 module.exports = function(app) {
-    app.post("/api/createAccount", function(req, res) {
+    app.post("/api/createaccount", function(req, res) {
         console.log(req.body);
         db.User.create({
           firstName: req.body.firstName,
