@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8' />
+    <title>Live Tracker</title>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.45.0/mapbox-gl.js'></script>
+    <link href='//mapbox.com/base/latest/base.css' rel='stylesheet' />
+    <link href="https://maxcdn.bootstrapcdn.com/bootswatch/4.0.0/flatly/bootstrap.min.css" rel="stylesheet">
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.45.0/mapbox-gl.css' rel='stylesheet' />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
+    <style>
+    
+        body { margin:0px; padding:0px}
+        #map { position:absolute; top:0; bottom:0; margin:65px; padding:70px; width:80%; height:80%;}
+        .buttons{  margin-left: auto;  margin-right: auto; width: 100%;} 
+    </style>
+
+</head>
+<body>
+
+        <nav class="navbar sticky-top navbar-light bg-light">
+                <a class="navbar-brand" href="#">LIVE FLIGHT TRACKER</a>
+              </nav>
+
+<div id='map'>
+
+    <div class ="buttons">
+        <a class="button is-primary is-rounded">Precipitation</a>
+        <a class="button is-link is-rounded">Cloud Coverage</a>
+        <a class="button is-info is-rounded">Temperature</a>
+        <a class="button is-success is-rounded">Sea-level Rise</a>
+        <a class="button is-danger is-rounded">Wind Coverage</a>
+        <a class="button is- is-rounded">Reset</a>
+        </div>
+</div>
+
+
+<script>
+mapboxgl.accessToken = 'pk.eyJ1IjoiYWRpdHBhdGVsIiwiYSI6ImNqaGlkZTc2YTBtN3AzN21wa2g4Y2tleTIifQ.gW1Mxzzw_1GNiU5FJqsDUQ';
+var map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/mapbox/streets-v9',
+    zoom: 0
+});
+
+var url = 'https://wanderdrone.appspot.com/';
+map.on('load', function () {
+    window.setInterval(function() {
+        map.getSource('drone').setData(url);
+    }, 2000);
+
+    map.addSource('drone', { type: 'geojson', data: url });
+    map.addLayer({
+        "id": "drone",
+        "type": "symbol",
+        "source": "drone",
+        "layout": {
+            "icon-image": "rocket-15"
+        }
+    });
+});
+</script>
+
+
+
+</body>
+</html>
