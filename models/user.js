@@ -1,26 +1,27 @@
-module.exports = function(sequelize, DataTypes) {
-    var User = sequelize.define("User", {
+module.exports = function (sequelize, DataTypes) {
+    var users = sequelize.define("users", {
         id: {
             type: DataTypes.INTEGER,
             primaryKey: true,
             autoIncrement: true,
-          },
-      firstName: {
-          type: DataTypes.STRING
-      },
+            unique: true
+        },
+        firstName: {
+            type: DataTypes.STRING
+        },
 
-      lastName: {
-          type: DataTypes.STRING
-      },
-      email:{
+        lastName: {
+            type: DataTypes.STRING
+        },
+        email: {
+            unique: true,
+            type: DataTypes.STRING
+        },
 
-      type:DataTypes.STRING
-      },
-
-      password: {
-          type:DataTypes.STRING
-      }
+        password: {
+            type: DataTypes.STRING
+        }
     });
-  
-    return User;
-  };
+
+    return users;
+};
