@@ -1,18 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Accident Reporting</title>
+    <title>Report an Accident!</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootswatch/4.0.0/flatly/bootstrap.min.css" rel="stylesheet">
+
+
 </head>
+
 <body>
-    <h1>This is the Accident Reporting area</h1>
-    <a class="btn btn-light" href="home.html">Home</a>
-    <a class="btn btn-light" href="index.html">Log Out</a>
-    <br><br>
-    <a class="btn btn-light" href="tracker.html">Live Tracker</a><br>
-    <a class="btn btn-light" href="database.html">Search Database</a><br>
-    <a class="btn btn-light" href="flightzone.html">Create a Flight Zone</a><br>
+        <nav class="navbar sticky-top navbar-light bg-light">
+                <a class="navbar-brand" href="#" text-align="center">Report!</a>
+              </nav>
+    <div class="container">
+    <form>
+        <div class="form-group">
+            <label for="exampleFormControlInput1"> Name</label>
+            <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="John Smith">
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlInput1"> Location</label>
+            <input type="location" class="form-control" id="exampleFormControlInput1" placeholder="Orlando Florida">
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlInput1"> N-number</label>
+            <input type="location" class="form-control" id="exampleFormControlInput1" placeholder="N-number">
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlTextarea1">Comments</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+    </form>
+</div>
+    <canvas id="canvas">
+    </canvas>
+    <input type="file" accept="image/*" id="file-input">
+    <script>
+        const fileInput = document.getElementById('file-input');
+
+        fileInput.addEventListener('change', (e) => doSomethingWithFiles(e.target.files));
+    </script>
+    <div class="camera">
+
+            <button id="startbutton">Take photo</button>
+        </div>
+
 </body>
+
 </html>
+<script>
+// Things to work on: 
+// center take a photo button on page
+// add functionality to Form
+// set up post request for Form
+// Associate the report to the User
+</script>
