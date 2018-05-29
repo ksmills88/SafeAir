@@ -1,12 +1,16 @@
+body{
+    background-image: url("../images/cityback.jpg");
+}
 .blog-container, .jumbotron, .nav {
     text-align: center;
-    width: 50%;
+    /* width: 50%; */
     margin: auto;
     font-family: 'Baloo', cursive;
 }
 
 .navbar2 {
     background-color: midnightblue;
+    height: 80px;
 }
 .openSKY {
     color: white;
@@ -37,9 +41,37 @@
     
 }
 .img-section {
-    padding-top: 70px;
+    padding-top: 90px;
     display: block;
     margin-left: auto;
     margin-right:auto;
     
+}
+#homelogo {
+    height: 35px;
+    width: 166px;
+    display: block;
+    margin-left: auto;
+    margin-right:auto;
+    
+}
+
+.dropdown-right{
+    text-align: right;
+    max-width: 81px;
+    padding-left: none;
+    padding-right: 30px;
+  
+}
+.dropdown{
+    max-width:96px;
+}
+.button-secondary{
+    max-width:81px;
+}
+.footer-class {
+    
+    
+    margin-left: auto;
+    margin-right:auto;
 }
