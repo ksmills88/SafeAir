@@ -1,2 +1,2 @@
-CREATE DATABASE users;
-USE users;
+CREATE DATABASE opensky;
+USE opensky;
