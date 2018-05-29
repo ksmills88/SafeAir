@@ -13,44 +13,40 @@
 
 </head>
 <body>
-    <nav class="navbar navbar-default ">
-    </nav>
-    <nav class="navbar fixed-top navbar-light navbar2">
-        <div class="dropdown">
-            <a class="btn btn-secondary dropdown-toggle navbutton" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <img src="images/baseline_account_circle_black_18dp.png">    
-            </a>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <a class="dropdown-item" href="#">Something else here</a>
-            </div>
-        </div>
-        <h1 class="openSKY">openSKY</h1>
-
-
-        <div class="btn-group">
-                <button type="button btn navbutton" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Right-aligned menu
-                </button>
-                <div class="dropdown-menu dropdown-menu-right">
-                    <p>K-index</p>                  
-                    <p>Weather</p>
-                    <p>Temperature</p>
-                    <p>Location</p>                  
-
-                    <button class="dropdown-item" type="button">Change Location</button>
-
+  <div class="container"> 
+    <nav class="navbar fixed-top navbar-light navbar2 row">
+        
+            <!-- <div class="col col-md-3 col-s-4  dropdown">
+                <div class="dropdown">
+                    <a class="btn btn-secondary dropdown-toggle navbutton" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img src="images/baseline_account_circle_black_18dp.png">    
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
                 </div>
-              </div>
+            </div> -->
 
-
-     
-
-
-
+            <div class="col">
+                <img src="images/OpenSky - Name Logo - White.png" id="homelogo" class="col">
+            </div>
+            
+            <!-- <div class="col col-md-3 col-s-4  dropdown-right btn-group">
+                    <button type="button" class="btn btn-secondary dropdown-right dropdown-toggle navbutton"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img src="images/baseline_account_circle_black_18dp.png">    
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <button class="dropdown-item" type="button" href="#">Action</button>
+                        <button class="dropdown-item" type="button" href="#">Another action</button>
+                        <button class="dropdown-item" type="button" href="#">Something else here</button>
+                    </div>
+            </div> -->
+        
     </nav>
-    <div class="container">
+
+    
         <div class="row img-section">
             
             <a href="database.html"><img class="imgsize"src="images/aeroarchive.png"></a>
@@ -59,12 +55,28 @@
             <a href="database.html"><img class="imgsize"src="images/tracker.png"></a>
        
         </div>
-    </div>
+  
     
 
     <footer class="navbar fixed-bottom navbar-light navbar2">
-        <a class="navbar-brand" href="#">Fixed bottom</a>
+        <div class="row footer-class">
+            <div class = "col-3">
+                <button type="button" class="btn btn-light"><img src="images/users.png"></button>
+            </div>
+            <div class = "col-3">
+                <button type="button" class="btn btn-light"><img src="images/weathericon.png"></button>
+            </div>
+            <div class = "col-3">
+                <button type="button" class="btn btn-light"><img src="images/notify.png"></button>
+            </div>
+            <div class = "col-3">
+                <button type="button" class="btn btn-light"><img src="images/mail.png"></button>
+            </div>
+        </div>
+
+        <!-- <div>Icons made by <a href="https://www.flaticon.com/authors/yannick" title="Yannick">Yannick</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div> -->
     </footer>
+  </div>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
