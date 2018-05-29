@@ -1,3 +1,5 @@
+<!-- This is the home page. This will prompt the user to click into  the buttons(4)-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,8 +7,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Homepage</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css" media="screen" title="no title">
+    <link href="https://fonts.googleapis.com/css?family=Baloo" rel="stylesheet">
+
 </head>
 <body>
-    <h1>This is the Homepage</h1>
+    <nav class="navbar navbar-default ">
+    </nav>
+    <nav class="navbar fixed-top navbar-light navbar2">
+        <div class="dropdown">
+            <a class="btn btn-secondary dropdown-toggle navbutton" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <img src="images/baseline_account_circle_black_18dp.png">    
+            </a>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+        </div>
+        <h1 class="openSKY">openSKY</h1>
+
+
+        <div class="btn-group">
+                <button type="button btn navbutton" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Right-aligned menu
+                </button>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <p>K-index</p>                  
+                    <p>Weather</p>
+                    <p>Temperature</p>
+                    <p>Location</p>                  
+
+                    <button class="dropdown-item" type="button">Change Location</button>
+
+                </div>
+              </div>
+
+
+     
+
+
+
+    </nav>
+    <div class="container">
+        <div class="row img-section">
+            
+            <a href="database.html"><img class="imgsize"src="images/aeroarchive.png"></a>
+            <a href="database.html"><img class="imgsize"src="images/alert.png"></a>
+            <a href="database.html"><img class="imgsize"src="images/notifly.png"></a>
+            <a href="database.html"><img class="imgsize"src="images/tracker.png"></a>
+       
+        </div>
+    </div>
+    
+
+    <footer class="navbar fixed-bottom navbar-light navbar2">
+        <a class="navbar-brand" href="#">Fixed bottom</a>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>
