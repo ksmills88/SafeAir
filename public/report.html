@@ -1,60 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Report an Accident!</title>
-    <link href="https://maxcdn.bootstrapcdn.com/bootswatch/4.0.0/flatly/bootstrap.min.css" rel="stylesheet">
-
-
+    <title>Homepage</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css" media="screen" title="no title">
+    <link href="https://fonts.googleapis.com/css?family=Baloo" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
-
 <body>
-        <nav class="navbar sticky-top navbar-light bg-light">
-                <a class="navbar-brand" href="#" text-align="center">Report!</a>
-              </nav>
-    <div class="container">
-    <form>
-        <div class="form-group">
-            <label for="exampleFormControlInput1"> Name</label>
-            <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="John Smith">
-        </div>
-        <div class="form-group">
-            <label for="exampleFormControlInput1"> Location</label>
-            <input type="location" class="form-control" id="exampleFormControlInput1" placeholder="Orlando Florida">
-        </div>
-        <div class="form-group">
-            <label for="exampleFormControlInput1"> N-number</label>
-            <input type="location" class="form-control" id="exampleFormControlInput1" placeholder="N-number">
-        </div>
-        <div class="form-group">
-            <label for="exampleFormControlTextarea1">Comments</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-        </div>
-    </form>
+  <div class="container"> 
+    <nav class="navbar fixed-top navbar-light navbar2 row" id="nav">
+        <div class="w3-container w3-center w3-animate-zoom">
+            <h1><font color="white">Report!</font></h1>
+            </div>
+ <div class="col">
+    <img src="images/OpenSky - Name Logo - White.png" id="homelogo" class="col">
 </div>
-    <canvas id="canvas">
-    </canvas>
-    <input type="file" accept="image/*" id="file-input">
-    <script>
-        const fileInput = document.getElementById('file-input');
+</nav>
+<div class="row accident">
+<div class="col-md-4 col-xs-12">
+<form>
+    <div class="form-group">
+        <label for="exampleFormControlInput1"> Name</label>
+        <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="John Smith">
+    </div>
+    <div class="form-group">
+        <label for="exampleFormControlInput1"> Location</label>
+        <input type="location" class="form-control" id="exampleFormControlInput1" placeholder="Orlando Florida">
+    </div>
+    <div class="form-group">
+        <label for="exampleFormControlInput1"> N-number</label>
+        <input type="location" class="form-control" id="exampleFormControlInput1" placeholder="N-number">
+    </div>
+    <div class="form-group">
+        <label for="exampleFormControlTextarea1">Comments</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+    </div>
+    <input type="file" id="myFile">
 
-        fileInput.addEventListener('change', (e) => doSomethingWithFiles(e.target.files));
-    </script>
-    <div class="camera">
-
-            <button id="startbutton">Take photo</button>
-        </div>
-
-</body>
-
-</html>
+</form>
+</div>
+<div class ="col-md-8">
+<video id="video" width="400" height="300" autoplay></video>
+<button id="snap">Snap Photo</button>
+    <canvas id="canvas" width="400" height="300"></canvas>
+</div>
+</div>
 <script>
-// Things to work on: 
-// center take a photo button on page
-// add functionality to Form
-// set up post request for Form
-// Associate the report to the User
+var video = document.getElementById('video');
+
+if(navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
+navigator.mediaDevices.getUserMedia({ video: true }).then(function(stream) {
+    video.src = window.URL.createObjectURL(stream);
+    video.play();
+});
+}
+
+var canvas = document.getElementById('canvas');
+var context = canvas.getContext('2d');
+var video = document.getElementById('video');
+
+document.getElementById("snap").addEventListener("click", function() {
+context.drawImage(video, 0, 0, 300, 250);
+});
+
+function myFunction() {
+var x = document.getElementById("myFile");
+x.disabled = true;
+}
+
+
 </script>
+<footer class="navbar fixed-bottom navbar-light navbar2">
+    <div class="row footer-class">
+        <div class = "col-3">
+            <button type="button" class="btn btn-light"><img src="images/users.png"></button>
+        </div>
+        <div class = "col-3">
+            <button type="button" class="btn btn-light"><img src="images/weathericon.png"></button>
+        </div>
+        <div class = "col-3">
+            <button type="button" class="btn btn-light"><img src="images/notify.png"></button>
+        </div>
+        <div class = "col-3">
+            <button type="button" class="btn btn-light"><img src="images/mail.png"></button>
+        </div>
+    </div>
+
+</footer>
+</div>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
