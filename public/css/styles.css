@@ -84,3 +84,11 @@ body{
 .accident{
     padding-top:90px;
 }
+
+.app{
+    animation-delay: 1s;
+}
+
+.sky {
+    animation-delay: 2s;
+}
