@@ -16,7 +16,7 @@
         
         <div class="col-12">
             <div class="w3-container w3-center w3-animate-zoom">
-                <h1><font color="yellow">Live Tracker!</font></h1>
+                <h1><font color="#00cc00">Notifly</font></h1>
             </div>
         </div>
 
@@ -32,35 +32,14 @@
         <div class="col notiflyLink"></div>
         <div class="col trackerLink"></div>
     </div>
-<div id='map'>
-</div>
+    
+    <div class = "middle-section center">
+        <a href="home.html"><h2>Site Currently Under Construction. <br> Go to Home Page</h2></a>
+    
+    </div>
 
 
-<script>
-mapboxgl.accessToken = 'pk.eyJ1IjoiYWRpdHBhdGVsIiwiYSI6ImNqaGlkZTc2YTBtN3AzN21wa2g4Y2tleTIifQ.gW1Mxzzw_1GNiU5FJqsDUQ';
-var map = new mapboxgl.Map({
-    container: 'map',
-    style: 'mapbox://styles/mapbox/streets-v9',
-    zoom: 0
-});
 
-var url = 'https://wanderdrone.appspot.com/';
-map.on('load', function () {
-    window.setInterval(function() {
-        map.getSource('drone').setData(url);
-    }, 2000);
-
-    map.addSource('drone', { type: 'geojson', data: url });
-    map.addLayer({
-        "id": "drone",
-        "type": "symbol",
-        "source": "drone",
-        "layout": {
-            "icon-image": "rocket-15"
-        }
-    });
-});
-</script>
 
 <footer class="navbar fixed-bottom navbar-light navbar2">
         <div class="row footer-class">
