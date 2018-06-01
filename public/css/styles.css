@@ -47,8 +47,8 @@
     display: block;
     margin-left: auto;
     margin-right:auto;
-    
 }
+
 #homelogo {
     height: 35px;
     width: 166px;
@@ -136,4 +136,10 @@ canvas {
     margin-top: 60px;
     margin-bottom: 40px;
     width: 250px;
+}
+#dynamic{
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right:auto;
 }
