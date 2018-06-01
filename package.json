@@ -10,7 +10,7 @@
     "mysql2": "^1.5.3",
     "parser": "^0.1.4",
     "particles.js": "^2.0.0",
-    "sequelize": "^4.37.8"
+    "sequelize": "^4.37.10"
   },
   "devDependencies": {},
   "scripts": {

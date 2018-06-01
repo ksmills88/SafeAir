@@ -15,6 +15,10 @@
   href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css"
   integrity="sha384-OHBBOqpYHNsIqQy8hL1U+8OXf9hH6QRxi0+EODezv82DfnZoV7qoHAZDwMwEJvSw"
   crossorigin="anonymous">
+
+  <head>
+    <link rel="stylesheet" href="animate.min.css">
+  </head>
   <link rel="stylesheet" href="css/styles.css" media="screen" title="no title">
 
 </head>
@@ -33,7 +37,7 @@
   <div class="container index-container" >
     <div class="row">
       <div class="col">
-        <img id= "index-logo"src="images/OpenSky - Name Logo - Full.png">
+        <img class="animated rollIn" id= "index-logo"src="images/OpenSky - Name Logo - Full.png">
         <!-- <h1 class="display-4">Welcome to Safe Air</h1> -->
       </div>
     </div>
@@ -56,20 +60,20 @@
       <div class="col ">
         <form>
           <div class="form-group left">
-            <label for="emailLogin">Email address</label>
-            <input type="email" class="form-control" id="emailLogin" aria-describedby="emailHelp" placeholder="Enter email">
+            <label for="emailLogin" class="animated zoomIn" id="emailaddy">Email address</label>
+            <input type="email" class="form-control animated zoomIn" id="emailLogin" aria-describedby="emailHelp" placeholder="Enter email">
           </div>
           <div class="form-group left">
-            <label for="passwordLogin">Password</label>
-            <input type="password" class="form-control" id="passwordLogin" placeholder="Password">
+            <label for="passwordLogin" class="animated zoomIn" id="pass">Password</label>
+            <input type="password" class="form-control animated zoomIn" id="passwordLogin" placeholder="Password">
           </div>
-          <button type="submit" class="btn btn-primary" id="loginBtn">Login</button>
+          <button type="submit" class="btn btn-primary animated zoomIn" id="loginBtn">Login</button>
           <!-- Button trigger modal -->
-          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+          <button type="button" class="btn btn-primary animated zoomIn" data-toggle="modal" id="create" data-target="#exampleModal">
             Create Account
           </button>
           <br>
-          <a id="continue-btn"href="home.html">
+          <a id="continue-btn"href="home.html" class="animated zoomIn">
             Continue as Guest
           </a>
 
