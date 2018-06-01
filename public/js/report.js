@@ -4,7 +4,7 @@ $(document).ready(function () {
     var n = $("#N-number");
     var comments = $("#comments");
 
-    $("#loginBtn").on("Click", function handleLogin (event) {
+    $("#submit").on("Click", function handleLogin (event) {
         event.prevenDefault();
         var loginInfo = {
             email: emailLogin.val().trim(),
@@ -20,4 +20,8 @@ $(document).ready(function () {
             alert("Logging In!");
         })
     }
+
+    $("body").click("#myFile", function(){
+console.log("clicked")
+    });
 })
