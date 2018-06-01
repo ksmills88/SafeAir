@@ -1,5 +1,5 @@
 
-    $("button").click(function(){
+    $("footer").click("#footNav", function(){
         $(".middle-section").empty();
     
         topDisplay();
@@ -16,7 +16,7 @@
         $(".alertLink").html(alert);
         $(".notiflyLink").html(notifly);
         $(".trackerLink").html(liveTracker);
-        $(".login").html(login)
+    
 
 
 
