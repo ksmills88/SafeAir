@@ -143,3 +143,54 @@ canvas {
     margin-left: auto;
     margin-right:auto;
 }
+
+#emailaddy{
+    animation-delay: 1s;
+}
+
+#emailLogin{
+    animation-delay: 1s;
+}
+
+
+#pass{
+    animation-delay: 1s;
+}
+
+#passwordLogin{
+    animation-delay: 1s;
+}
+
+#loginBtn{
+    animation-delay: 2s;
+}
+#create{
+    animation-delay: 2s;
+}
+#continue-btn{
+    animation-delay: 2s;
+}
+
+
+#database{
+    animation-delay:1s;
+}
+
+#monitor{
+    animation-delay:1s;
+}
+
+#nofly{
+    animation-delay:1s;
+}
+#track{
+    animation-delay:1s;
+}
+
+#people, #rain, #no, #male{
+    animation-delay:1s;
+}
+
+#footNav{
+    animation-delay: 1s;
+}

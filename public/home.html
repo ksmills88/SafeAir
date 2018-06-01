@@ -10,9 +10,19 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css" media="screen" title="no title">
     <link href="https://fonts.googleapis.com/css?family=Baloo" rel="stylesheet">
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 
+    <style>
+        body{
+            background-image: url("https://png.pngtree.com/thumb_back/fw800/back_pic/04/11/83/21581adf7df20e1.jpg");
+            background-size:cover;
+        }
+
+    </style>
 </head>
 <body>
+
   <div class="container"> 
     <nav class="navbar fixed-top navbar-light navbar2 row">
         
@@ -30,12 +40,12 @@
             </div> -->
 
             <div class="col-12">
-                <img src="images/OpenSky - Name Logo - White.png" id="homelogo" class="col">
+                <img src="images/OpenSky - Name Logo - White.png" id="homelogo" class="col animated tada">
             </div>
         
       
             <div class="col loginLink">
-                <a href="index.html" class="loginLink">Login</a>
+                <a href="index.html" class="loginLink animated zoomIn">Login</a>
             </div>
            
 
@@ -63,10 +73,10 @@
     
         <div class="row middle-section">
             
-            <a href="database.html"><img class="imgsize img"src="images/aeroarchive.png"></a>
-            <a href="report.html"><img class="imgsize img"src="images/alert.png"></a>
-            <a href="notifly.html"><img class="imgsize img"src="images/notifly.png"></a>
-            <a href="flighttracker.html"><img class="imgsize img"src="images/tracker.png"></a>
+            <a href="database.html"><img class="imgsize img animated zoomIn tada" id="database" src="images/aeroarchive.png"></a>
+            <a href="report.html"><img class="imgsize img animated zoomIn"id="monitor" src="images/alert.png"></a>
+            <a href="notifly.html"><img class="imgsize img animated zoomIn"id="nofly" src="images/notifly.png"></a>
+            <a href="flighttracker.html"><img class="imgsize img animated zoomIn" id="track" src="images/tracker.png"></a>
        
         </div>
 
@@ -74,19 +84,19 @@
         <div class="row footer-class">
             <div class = "col-3" id="droners">
 
-                <button id="footNav" type="button" class="btn btn-light"><img src="images/users.png"></button>
+                <button id="footNav" type="button" class="btn btn-light animated zoomIn"><img src="images/users.png" class="animated zoomIn" id="people"></button>
             </div>
 
             <div class = "col-3" id="weather">
-                <button id="footNav" type="button" class="btn btn-light"><img src="images/weathericon.png"></button>
+                <button id="footNav" type="button" class="btn btn-light animated zoomIn"><img src="images/weathericon.png"  class="animated zoomIn" id="rain"></button>
             </div>
 
             <div class = "col-3" id = "alert">
-                <button id="footNav" type="button" class="btn btn-light"><img src="images/notify.png"></button>
+                <button id="footNav" type="button"  class="btn btn-light animated zoomIn"><img src="images/notify.png"  class="animated zoomIn" id="no"> </button>
             </div>
 
             <div class = "col-3"id = "mail">
-                <button id="footNav" type="button" class="btn btn-light"><img src="images/mail.png"></button>
+                <button id="footNav" type="button" class="btn btn-light animated zoomIn"><img src="images/mail.png"  class="animated zoomIn" id="male"></button>
             </div>
 
         </div>

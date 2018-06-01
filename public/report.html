@@ -9,9 +9,15 @@
     <link rel="stylesheet" href="css/styles.css" media="screen" title="no title">
     <link href="https://fonts.googleapis.com/css?family=Baloo" rel="stylesheet">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css"
-  integrity="sha384-OHBBOqpYHNsIqQy8hL1U+8OXf9hH6QRxi0+EODezv82DfnZoV7qoHAZDwMwEJvSw"
-  crossorigin="anonymous">
+    <style>
+            body{
+                background-image: url("https://png.pngtree.com/thumb_back/fw800/back_pic/04/11/83/21581adf7df20e1.jpg");
+                background-size:cover;
+            }
+    
+        </style>
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 </head>
 <body>
   <div class="container"> 
@@ -19,9 +25,8 @@
        
 
  <div class="col-12">
-    <div class="w3-container w3-center w3-animate-zoom">
-        <h1><font color="red">Alert!</font></h1>
-    </div>
+   
+        <h1 class="animated zoomIn"><font color="red">Alert!</font></h1>
 </div>
 <div class="col loginLink">
     <a href="home.html" class="loginLink">Home</a>
@@ -37,10 +42,7 @@
     <div class="col trackerLink"></div>
 </div>
 
-<div class="row accident middle-section">
-
-
-    <div class="col-md-4 col-xs-12">
+    <div class="col-md-5">
         <form>
             <div class="form-group">
                 <label for="exampleFormControlInput1"> Name</label>
@@ -65,12 +67,11 @@
 
         </form>
     </div>
-    <div class ="col-md-8">
-        <video id="video" width="400" height="300" autoplay></video>
-        <button id="snap">Snap Photo</button>
-        <canvas id="canvas" width="400" height="300"></canvas>
-    </div>
-</div>
+    <div class ="col-md-7">
+            <video id="video" width="300" height="300" autoplay></video>
+            <button id="snap">Snap Photo</button>
+            <canvas id="canvas" width="300" height="300"></canvas>
+        </div>
 
 
 <script>
@@ -102,19 +103,19 @@ x.disabled = true;
         <div class="row footer-class">
             <div class = "col-3" id="droners">
 
-                <button id="footNav" type="button" class="btn btn-light"><img src="images/users.png"></button>
+                <button id="footNav" type="button" class="btn btn-light animated zoomIn"><img src="images/users.png" class="animated zoomIn" id="people"></button>
             </div>
 
             <div class = "col-3" id="weather">
-                <button id="footNav" type="button" class="btn btn-light"><img src="images/weathericon.png"></button>
+                <button id="footNav" type="button" class="btn btn-light animated zoomIn"><img src="images/weathericon.png"  class="animated zoomIn" id="rain"></button>
             </div>
 
             <div class = "col-3" id = "alert">
-                <button id="footNav" type="button" class="btn btn-light"><img src="images/notify.png"></button>
+                <button id="footNav" type="button"  class="btn btn-light animated zoomIn"><img src="images/notify.png"  class="animated zoomIn" id="no"> </button>
             </div>
 
             <div class = "col-3"id = "mail">
-                <button id="footNav" type="button" class="btn btn-light"><img src="images/mail.png"></button>
+                <button id="footNav" type="button" class="btn btn-light animated zoomIn"><img src="images/mail.png"  class="animated zoomIn" id="male"></button>
             </div>
 
         </div>
