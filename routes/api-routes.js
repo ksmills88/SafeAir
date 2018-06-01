@@ -23,4 +23,15 @@ module.exports = function (app) {
       res.json(dbGet);
     });
   });
+
+  app.post("/api/alert/", function (req, res) {
+    db.users.create({
+        name: req.body.email,
+        location: req.body.location,
+        nNumber: req.body.nNumber,
+        comments: req.body.comments
+    }).then(function (dbPost) {
+      res.json(dbPost);
+    });
+  });
 };

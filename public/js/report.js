@@ -3,25 +3,27 @@ $(document).ready(function () {
     var location = $("#location");
     var n = $("#N-number");
     var comments = $("#comments");
+    // var picFile = $("#myFile");
 
-    $("#submit").on("Click", function handleLogin (event) {
-        event.prevenDefault();
-        var loginInfo = {
-            email: emailLogin.val().trim(),
-            password: passwordLogin.val().trim()
+    $("#submit").on("click", function submitForm (event) {
+        console.log("button clicked")
+        event.preventDefault();
+        var accidentInfo = {
+            name: name.val().trim(),
+            location: location.val().trim(),
+            nNumber: n.val().trim(),
+            comments: comments.val().trim()
         };
 
-        login(loginInfo);
-        console.log("Logged in!");
+        submitAccident(accidentInfo);
+        console.log("Submitted!");
 
     });
-    function login(loginInfo) {
-        $.get("api/login/", loginInfo, function () {
-            alert("Logging In!");
+    function submitAccident(accidentInfo) {
+        $.post("api/alert/", accidentInfo, function () {
+            console.log("Accident info sent");
         })
     }
 
-    $("body").click("#myFile", function(){
-console.log("clicked")
-    });
+
 })
