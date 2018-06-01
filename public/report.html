@@ -31,45 +31,45 @@
 
 <!-- the div below is empty and will display once the on-click function triggers an empty() first -->
 <div class="row pageNames">
-        <div class="col aeroLink"></div>
-        <div class="col alertLink"></div>
-        <div class="col notiflyLink"></div>
-        <div class="col trackerLink"></div>
-    </div>
+    <div class="col aeroLink"></div>
+    <div class="col alertLink"></div>
+    <div class="col notiflyLink"></div>
+    <div class="col trackerLink"></div>
+</div>
 
 <div class="row accident middle-section">
 
 
-<div class="col-md-4 col-xs-12">
-<form>
-    <div class="form-group">
-        <label for="exampleFormControlInput1"> Name</label>
-        <input type="name" class="form-control" id="name" placeholder="John Smith">
-    </div>
-    <div class="form-group">
-        <label for="exampleFormControlInput1"> Location</label>
-        <input type="location" class="form-control" id="location" placeholder="Orlando Florida">
-    </div>
-    <div class="form-group">
-        <label for="exampleFormControlInput1"> N-number</label>
-        <input type="location" class="form-control" id="N-number" placeholder="N-number">
-    </div>
-    <div class="form-group">
-        <label for="exampleFormControlTextarea1">Comments</label>
-        <textarea class="form-control" id="comments" rows="3"></textarea>
-    </div>
-    <button id="submit" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-            Submit
-          </button>
-    <input type="file" id="myFile">
+    <div class="col-md-4 col-xs-12">
+        <form>
+            <div class="form-group">
+                <label for="exampleFormControlInput1"> Name</label>
+                <input type="name" class="form-control" id="name" placeholder="John Smith">
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlInput1"> Location</label>
+                <input type="location" class="form-control" id="location" placeholder="Orlando Florida">
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlInput1"> N-number</label>
+                <input type="location" class="form-control" id="N-number" placeholder="N-number">
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlTextarea1">Comments</label>
+                <textarea class="form-control" id="comments" rows="3"></textarea>
+            </div>
+            <button id="submit" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                Submit
+            </button>
+            <input type="file" id="myFile">
 
-</form>
-</div>
-<div class ="col-md-8">
-<video id="video" width="400" height="300" autoplay></video>
-<button id="snap">Snap Photo</button>
-    <canvas id="canvas" width="400" height="300"></canvas>
-</div>
+        </form>
+    </div>
+    <div class ="col-md-8">
+        <video id="video" width="400" height="300" autoplay></video>
+        <button id="snap">Snap Photo</button>
+        <canvas id="canvas" width="400" height="300"></canvas>
+    </div>
 </div>
 
 
@@ -99,22 +99,28 @@ x.disabled = true;
 
 </script>
 <footer class="navbar fixed-bottom navbar-light navbar2">
-    <div class="row footer-class">
-        <div class = "col-3">
-            <button type="button" class="btn btn-light"><img src="images/users.png"></button>
-        </div>
-        <div class = "col-3">
-            <button type="button" class="btn btn-light"><img src="images/weathericon.png"></button>
-        </div>
-        <div class = "col-3">
-            <button type="button" class="btn btn-light"><img src="images/notify.png"></button>
-        </div>
-        <div class = "col-3">
-            <button type="button" class="btn btn-light"><img src="images/mail.png"></button>
-        </div>
-    </div>
+        <div class="row footer-class">
+            <div class = "col-3" id="droners">
 
-</footer>
+                <button id="footNav" type="button" class="btn btn-light"><img src="images/users.png"></button>
+            </div>
+
+            <div class = "col-3" id="weather">
+                <button id="footNav" type="button" class="btn btn-light"><img src="images/weathericon.png"></button>
+            </div>
+
+            <div class = "col-3" id = "alert">
+                <button id="footNav" type="button" class="btn btn-light"><img src="images/notify.png"></button>
+            </div>
+
+            <div class = "col-3"id = "mail">
+                <button id="footNav" type="button" class="btn btn-light"><img src="images/mail.png"></button>
+            </div>
+
+        </div>
+
+        <!-- <div>Icons made by <a href="https://www.flaticon.com/authors/yannick" title="Yannick">Yannick</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div> -->
+    </footer>
 </div>
 <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
