@@ -9,6 +9,7 @@
     "express": "^4.16.3",
     "mysql2": "^1.5.3",
     "parser": "^0.1.4",
+    "particles.js": "^2.0.0",
     "sequelize": "^4.37.8"
   },
   "devDependencies": {},

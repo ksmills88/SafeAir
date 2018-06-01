@@ -2,7 +2,6 @@ var db = require("../models");
 
 module.exports = function (app) {
   app.post("/api/createaccount/", function (req, res) {
-    console.log("Here!");
     db.users.create({
         firstName: req.body.firstName,
         lastName: req.body.lastName,
@@ -15,8 +14,7 @@ module.exports = function (app) {
   });
 
   app.get("/api/login/", function (req, res) {
-    console.log("Logged in!");
-    db.users.findAll({
+    db.users.findOne({
       where: {
         email: req.body.email,
         password: req.body.password
