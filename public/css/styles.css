@@ -2,7 +2,7 @@ body{
     background-image: url("../images/cityback.jpg");
     background-size: cover;
 }
-.blog-container, .jumbotron, .nav {
+.blog-container, .nav, .container {
     text-align: center;
     /* width: 50%; */
     margin: auto;
@@ -84,3 +84,4 @@ body{
 .accident{
     padding-top:90px;
 }
+

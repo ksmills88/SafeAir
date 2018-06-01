@@ -13,16 +13,14 @@ $(document).ready(function () {
             email: emailInput.val().trim(),
             password: passwordInput.val().trim()
         };
-
         
-
         createUser(newUser);
 
     });
 
     function createUser(newUser) {
         $.post("/api/createaccount/", newUser, function () {
-           alert("Account Created!");
+           
         });
     }
 
