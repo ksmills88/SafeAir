@@ -17,30 +17,46 @@
   <div class="container"> 
     <nav class="navbar fixed-top navbar-light navbar2 row" id="nav">
        
- <div class="col">
-        <div class="w3-container w3-center w3-animate-zoom">
-                <h1 class= "animated lightSpeedIn"><font color="red">Alert!</font></h1>
-                </div>
+
+ <div class="col-12">
+    <div class="w3-container w3-center w3-animate-zoom">
+        <h1><font color="red">Alert!</font></h1>
+    </div>
+</div>
+<div class="col loginLink">
+    <a href="home.html" class="loginLink">Home</a>
+
 </div>
 </nav>
-<div class="row accident">
+
+<!-- the div below is empty and will display once the on-click function triggers an empty() first -->
+<div class="row pageNames">
+        <div class="col aeroLink"></div>
+        <div class="col alertLink"></div>
+        <div class="col notiflyLink"></div>
+        <div class="col trackerLink"></div>
+    </div>
+
+<div class="row accident middle-section">
+
+
 <div class="col-md-4 col-xs-12">
 <form>
     <div class="form-group">
         <label for="exampleFormControlInput1"> Name</label>
-        <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="John Smith">
+        <input type="name" class="form-control" id="name" placeholder="John Smith">
     </div>
     <div class="form-group">
         <label for="exampleFormControlInput1"> Location</label>
-        <input type="location" class="form-control" id="exampleFormControlInput1" placeholder="Orlando Florida">
+        <input type="location" class="form-control" id="location" placeholder="Orlando Florida">
     </div>
     <div class="form-group">
         <label for="exampleFormControlInput1"> N-number</label>
-        <input type="location" class="form-control" id="exampleFormControlInput1" placeholder="N-number">
+        <input type="location" class="form-control" id="N-number" placeholder="N-number">
     </div>
     <div class="form-group">
         <label for="exampleFormControlTextarea1">Comments</label>
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        <textarea class="form-control" id="comments" rows="3"></textarea>
     </div>
     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
             Submit
@@ -101,4 +117,7 @@ x.disabled = true;
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="js/home.js"></script>
+<script src="js/report.js"></script>
+
 </body>
