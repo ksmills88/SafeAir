@@ -45,35 +45,21 @@
         <div class="col trackerLink"></div>
     </div>
 
-<div id='map' class="middle-section row">
 </div>
 
+<div id="map">
 
-<script>
-mapboxgl.accessToken = 'pk.eyJ1IjoiYWRpdHBhdGVsIiwiYSI6ImNqaGlkZTc2YTBtN3AzN21wa2g4Y2tleTIifQ.gW1Mxzzw_1GNiU5FJqsDUQ';
-var map = new mapboxgl.Map({
-    container: 'map',
-    style: 'mapbox://styles/mapbox/streets-v9',
-    zoom: 0
-});
+</div>
+      
+<div id = "weather-btns">
+    <button class = "btn btn-secondary animated zoomIn" title="Click again to increase opacity">Precipitation</button>
+    <button class = "btn btn-secondary animated zoomIn"id="clouds" title="Click again to increase opacity">Clouds</button>
+    <button class = "btn btn-secondary animated zoomIn"id="sealevel" title="Click again to increase opacity">SeaLevel</button>
+    <button class = "btn btn-secondary animated zoomIn"id="windspeed" title="Click again to increase opacity">Wind</button>
+    <button class = "btn btn-secondary animated zoomIn"id="temperature" title="Click again to increase opacity">Temperature</button>
+    <button class = "btn btn-secondary animated zoomIn"id="reset">Reset</button>
+</div>
 
-var url = 'https://wanderdrone.appspot.com/';
-map.on('load', function () {
-    window.setInterval(function() {
-        map.getSource('drone').setData(url);
-    }, 2000);
-
-    map.addSource('drone', { type: 'geojson', data: url });
-    map.addLayer({
-        "id": "drone",
-        "type": "symbol",
-        "source": "drone",
-        "layout": {
-            "icon-image": "rocket-15"
-        }
-    });
-});
-</script>
 
 <footer class="navbar fixed-bottom navbar-light navbar2">
         <div class="row footer-class">
@@ -103,6 +89,10 @@ map.on('load', function () {
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="js/home.js"></script>
+    <script src="js/flighttracker.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA9_3Tyu14z8VAgV3n0JKBk2uhi5Jqve4M&callback=initMap">
+    </script>
+
 
 </body>
 </html>

@@ -194,3 +194,11 @@ canvas {
 #footNav{
     animation-delay: 1s;
 }
+
+
+#map{
+    height:570px;
+    width:100%;
+
+}
+

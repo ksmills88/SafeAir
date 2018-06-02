@@ -3,7 +3,6 @@ $(document).ready(function () {
     var location = $("#location");
     var n = $("#N-number");
     var comments = $("#comments");
-    // var picFile = $("#myFile");
 
     $("#submit").on("click", function submitForm (event) {
         console.log("button clicked")
