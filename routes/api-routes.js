@@ -34,4 +34,33 @@ module.exports = function (app) {
       res.json(dbPost);
     });
   });
+
+  app.get("/search/:paramOne", function (req, res) {
+
+    var query = ""
+
+    if (req.params.paramOne.includes(",")) {
+
+      query = req.params.paramOne; 
+
+      query = "typeaircraft: { [Op.or]: [" + query + "]}"
+      console.log(query);
+    };
+
+
+    db.search.findAll({
+      where: {
+        nnumber: req.params.paramOne,
+      }
+    }).then(function (dbData) {
+     
+      var results = dbData;
+  
+      var trimResults = JSON.parse(JSON.stringify(results).replace(/"\s+|\s+"/g,'"'));
+      
+      res.json(trimResults);
+      
+      // console.log(trimResults);
+    });
+  });
 };

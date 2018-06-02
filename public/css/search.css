@@ -1,0 +1,65 @@
+#dropdown-row  {
+    margin:5px
+}
+
+h1 {
+    text-align: center;
+    color: black;
+    text-decoration: underline;
+    
+    
+}
+
+body {
+    background-color: rgb(112, 114, 252);
+}
+
+table {
+    width: 100%;
+    overflow: scroll;
+}
+
+tr {
+    background-color: antiquewhite;
+    border-bottom: 2px solid black;
+    margin-left:50px;
+}
+
+#results-table {
+    width:100%;
+    height: 100%;
+    background-color: gray;
+}
+
+#craft-group {
+    width: 80%;
+    height:300px;
+    overflow: scroll;
+}
+
+#engine-group {
+    width: 80%;
+    height:300px;
+    overflow: scroll;
+}
+
+#craft-group-header {
+    font-size: 20px;
+}
+
+#submit-button {
+    margin: 20px
+}
+
+.col-4 {
+    padding: 30px;
+    background-color: gray;
+    height: 690px;
+    overflow: scroll;
+}
+
+.col-7 {
+    width:100%;
+    height: 100%;
+    background-color: gray;
+}
