@@ -47,6 +47,7 @@
     display: block;
     margin-left: auto;
     margin-right:auto;
+    color: midnightblue;
 }
 
 #homelogo {
@@ -111,6 +112,8 @@ h1{
 }
 .pageNames{
     padding-top: 100px;
+
+    
 
 }
 
@@ -193,4 +196,21 @@ canvas {
 
 #footNav{
     animation-delay: 1s;
+}
+.snap-section{
+    display: block;
+    margin-left: auto;
+    margin-right:auto;
+}
+.btn-primary{
+    background-color: midnightblue;
+}
+.alert-form{
+    text-align: left;
+}
+.dyn-image{
+    width: 75px;
+}
+.pageLink{
+    padding: 0;
 }

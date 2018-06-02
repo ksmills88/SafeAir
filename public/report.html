@@ -12,7 +12,7 @@
     <style>
             body{
                 background-image: url("https://png.pngtree.com/thumb_back/fw800/back_pic/04/11/83/21581adf7df20e1.jpg");
-                background-size:cover;
+                background-size:1000px;
             }
     
         </style>
@@ -24,55 +24,61 @@
     <nav class="navbar fixed-top navbar-light navbar2 row" id="nav">
        
 
- <div class="col-12">
+        <div class="col-12">
    
-        <h1 class="animated zoomIn"><font color="red">Alert!</font></h1>
-</div>
-<div class="col loginLink">
-    <a href="home.html" class="loginLink">Home</a>
+            <h1 class="animated zoomIn"><font color="red">Alert!</font></h1>
+        </div>
+        <div class="col loginLink">
+            <a href="home.html" class="loginLink">Home</a>
 
-</div>
-</nav>
+        </div>
+    </nav>
 
 <!-- the div below is empty and will display once the on-click function triggers an empty() first -->
-<div class="row pageNames">
-    <div class="col aeroLink"></div>
-    <div class="col alertLink"></div>
-    <div class="col notiflyLink"></div>
-    <div class="col trackerLink"></div>
-</div>
-
-    <div class="col-md-5">
-        <form>
-            <div class="form-group">
-                <label for="exampleFormControlInput1"> Name</label>
-                <input type="name" class="form-control" id="name" placeholder="John Smith">
-            </div>
-            <div class="form-group">
-                <label for="exampleFormControlInput1"> Location</label>
-                <input type="location" class="form-control" id="location" placeholder="Orlando Florida">
-            </div>
-            <div class="form-group">
-                <label for="exampleFormControlInput1"> N-number</label>
-                <input type="location" class="form-control" id="N-number" placeholder="N-number">
-            </div>
-            <div class="form-group">
-                <label for="exampleFormControlTextarea1">Comments</label>
-                <textarea class="form-control" id="comments" rows="3"></textarea>
-            </div>
-            <button id="submit" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-                Submit
-            </button>
-            <input type="file" id="myFile">
-
-        </form>
+    <div class="row pageNames">
+        <div class="col pageLink aeroLink"></div>
+        <!-- <div class="col alertLink"></div>
+        <div class="col notiflyLink"></div>
+        <div class="col trackerLink"></div> -->
     </div>
-    <div class ="col-md-7">
-            <video id="video" width="300" height="300" autoplay></video>
-            <button id="snap">Snap Photo</button>
-            <canvas id="canvas" width="300" height="300"></canvas>
+    <div class="row middle-section">
+        <div class="col-md-5">
+            <form class="alert-form">
+                <div class="form-group">
+                    <label for="exampleFormControlInput1"> Name</label>
+                    <input type="name" class="form-control" id="name" placeholder="John Smith">
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlInput1"> Location</label>
+                    <input type="location" class="form-control" id="location" placeholder="Orlando Florida">
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlInput1"> N-number</label>
+                    <input type="location" class="form-control" id="N-number" placeholder="N-number">
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlTextarea1">Comments</label>
+                    <textarea class="form-control" id="comments" rows="3"></textarea>
+                </div>
+                <button id="submit" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                    Submit
+                </button>
+                <input type="file" id="myFile">
+            </form>
         </div>
+        <div class ="col-md-7 snap-section">
+            <div class="row">
+                <div class="col-12">
+                    <video id="video" width="300" height="300" autoplay></video>
+                </div>
+                <div class = "col-12">
+                    <button id="snap" class="btn btn-primary">Snap Photo</button>
+                </div>
 
+                <canvas id="canvas" width="300" height="300"></canvas>
+            </div>
+        </div>
+    </div>
 
 <script>
 var video = document.getElementById('video');
