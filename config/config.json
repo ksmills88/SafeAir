@@ -2,7 +2,9 @@
   "development": {
     "username": "root",
     "password": "root",
+
     "port": 3306,
+
     "database": "opensky",
   
     "host": "127.0.0.1",
@@ -11,7 +13,9 @@
   "test": {
     "username": "root",
     "password": "root",
+
     "port":3306,
+
     "database": "opensky",
   
  
@@ -19,8 +23,10 @@
     "dialect": "mysql"
   },
   "production": {
+
  
     "port": 3306,
+
     "username": "root",
     "password": "root",
     "database": "opensky",
