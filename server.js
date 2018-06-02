@@ -6,6 +6,7 @@
 // =============================================================
 var express = require("express");
 var bodyParser = require("body-parser");
+var session = require("express-session")
 
 // Sets up the Express App
 // =============================================================
@@ -17,6 +18,7 @@ console.log(PORT);
 var db = require("./models");
 
 // Sets up the Express app to handle data parsing
+
 
 // parse application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -30,7 +32,6 @@ app.use(express.static("public"));
 // =============================================================
 require("./routes/html-routes.js")(app);
 require("./routes/api-routes.js")(app);
-
 
 
 // Syncing our sequelize models and then starting our Express app
