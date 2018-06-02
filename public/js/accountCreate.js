@@ -15,6 +15,7 @@ $(document).ready(function () {
         };
         
         createUser(newUser);
+        alert("Account Created!")
 
     });
 

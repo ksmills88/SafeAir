@@ -25,7 +25,7 @@ module.exports = function (app) {
   });
 
   app.post("/api/alert/", function (req, res) {
-    db.users.create({
+    db.accidents.create({
         name: req.body.email,
         location: req.body.location,
         nNumber: req.body.nNumber,
