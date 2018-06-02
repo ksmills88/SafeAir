@@ -12,7 +12,7 @@
     <style>
             body{
                 background-image: url("https://png.pngtree.com/thumb_back/fw800/back_pic/04/11/83/21581adf7df20e1.jpg");
-                background-size:1000px;
+                background-size:1500px;
             }
     
         </style>
@@ -41,44 +41,55 @@
         <div class="col notiflyLink"></div>
         <div class="col trackerLink"></div> -->
     </div>
-    <div class="row middle-section">
-        <div class="col-md-5">
+
+    <div class=" middle-section">
+
+    <div class= "row">
+        <div class="col">
+            <p>Hello</p>
             <form class="alert-form">
-                <div class="form-group">
-                    <label for="exampleFormControlInput1"> Name</label>
-                    <input type="name" class="form-control" id="name" placeholder="John Smith">
-                </div>
-                <div class="form-group">
-                    <label for="exampleFormControlInput1"> Location</label>
-                    <input type="location" class="form-control" id="location" placeholder="Orlando Florida">
-                </div>
-                <div class="form-group">
-                    <label for="exampleFormControlInput1"> N-number</label>
-                    <input type="location" class="form-control" id="N-number" placeholder="N-number">
-                </div>
-                <div class="form-group">
-                    <label for="exampleFormControlTextarea1">Comments</label>
-                    <textarea class="form-control" id="comments" rows="3"></textarea>
-                </div>
-                <button id="submit" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-                    Submit
-                </button>
-                <input type="file" id="myFile">
-            </form>
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1"> Name</label>
+                        <input type="name" class="form-control" id="name" placeholder="John Smith">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1"> Location</label>
+                        <input type="location" class="form-control" id="location" placeholder="Orlando Florida">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1"> N-number</label>
+                        <input type="location" class="form-control" id="N-number" placeholder="N-number">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlTextarea1">Comments</label>
+                        <textarea class="form-control" id="comments" rows="3"></textarea>
+                    </div>
+                    <button id="submit" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                        Submit
+                    </button>
+                    <input type="file" id="myFile">
+                </form>
+
         </div>
-        <div class ="col-md-7 snap-section">
-            <div class="row">
-                <div class="col-12">
-                    <video id="video" width="300" height="300" autoplay></video>
-                </div>
-                <div class = "col-12">
-                    <button id="snap" class="btn btn-primary">Snap Photo</button>
+        <div class="col">
+            <p>Hello</p>
+            <div class="row snap-section">
+                    <div class="col-12">
+                        <video id="video" width="300" height="250" autoplay></video>
+                    </div>
+                    <div class = "col-12">
+                        <button id="snap" class="btn btn-primary">Snap Photo</button>
+                    </div>
+    
+                    <canvas id="canvas" width="120" height="100"></canvas>
                 </div>
 
-                <canvas id="canvas" width="300" height="300"></canvas>
-            </div>
         </div>
+
     </div>
+</div>
+
+
 
 <script>
 var video = document.getElementById('video');
@@ -95,7 +106,7 @@ var context = canvas.getContext('2d');
 var video = document.getElementById('video');
 
 document.getElementById("snap").addEventListener("click", function() {
-context.drawImage(video, 0, 0, 300, 250);
+context.drawImage(video, 0, 0, 120, 100);
 });
 
 function myFunction() {
@@ -105,7 +116,7 @@ x.disabled = true;
 
 
 </script>
-<footer class="navbar fixed-bottom navbar-light navbar2">
+    <footer class="navbar fixed-bottom navbar-light navbar2">
         <div class="row footer-class">
             <div class = "col-3" id="droners">
 
