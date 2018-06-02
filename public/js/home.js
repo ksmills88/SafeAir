@@ -57,20 +57,19 @@
 
     var when2Fly = function(){
 
-
         $(".middle-section").append('<h2><strong>When2Fly(Coming Soon!)</strong></h2>');
         $(".middle-section").append('<p>Let IBM Watson forecast the best flying days for you and your friends.</p>')
     }
     var alerts = function(){
-        $(".middle-section").html('<h2>Notifications(Coming Soon!)</h2><br><p>Find out what is happening in your area.</p>')
+        $(".middle-section").html('<h2><strong>Notifications(Coming Soon!)</strong></h2><br><p>Find out what is happening in your area.</p>')
     }
     var mail = function(){
-        $(".middle-section").html('<h2>Mail(Coming Soon!)</h2><br><p>Connect!</p>')
+        $(".middle-section").html('<h2><strong>Mail(Coming Soon!)</strong></h2><br><p>Connect!</p>')
     }
     
     var droners = function(){
         console.log("hi droners")
-        $(".middle-section").html('<h2>Droners(Coming Soon!)</h2><br><p>A social network for Drone enthusiasts</p>')
+        $(".middle-section").html('<h2><strong>Droners(Coming Soon!)</strong></h2><br><p>A social network for Drone enthusiasts</p>')
     }
     
     
