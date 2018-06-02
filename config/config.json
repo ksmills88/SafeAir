@@ -2,7 +2,10 @@
   "development": {
     "username": "root",
     "password": "root",
-    "port": 8889,
+
+
+    "port": 3306,
+
     "database": "opensky",
    
     "host": "127.0.0.1",
@@ -11,7 +14,9 @@
   "test": {
     "username": "root",
     "password": "root",
-    "port": 8889,
+
+    "port":3306,
+
     "database": "opensky",
   
 
@@ -20,7 +25,10 @@
   },
   "production": {
 
-    "port": 8889,
+
+
+    "port": 3306,
+
     "username": "root",
     "password": "root",
     "database": "opensky",

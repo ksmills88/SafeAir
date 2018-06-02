@@ -197,6 +197,7 @@ canvas {
 #footNav{
     animation-delay: 1s;
 }
+
 .snap-section{
     display: block;
     margin-left: auto;
@@ -214,3 +215,13 @@ canvas {
 .pageLink{
     padding: 0;
 }
+
+
+
+#map{
+    height:570px;
+    width:100%;
+
+}
+
+
