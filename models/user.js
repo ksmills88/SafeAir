@@ -13,7 +13,7 @@ module.exports = function (sequelize, DataTypes) {
         lastName: {
             type: DataTypes.STRING
         },
-        email: {
+        username: {
             unique: true,
             type: DataTypes.STRING
         },
