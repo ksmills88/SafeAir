@@ -13,7 +13,7 @@ module.exports = function (app) {
       });
   });
 
-  app.get("/api/login/", function (req, res) {
+  app.post("/api/login/", function (req, res) {
     db.users.findOne({
       where: {
         email: req.body.email,

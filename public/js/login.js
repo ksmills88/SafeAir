@@ -13,7 +13,7 @@ $(document).ready(function () {
 
     });
     function login(loginInfo) {
-        $.get("api/login/", loginInfo, function () {
+        $.post("api/login/", loginInfo, function () {
             console.log("Logging In!");
         })
     }
